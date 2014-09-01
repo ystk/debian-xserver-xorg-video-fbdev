@@ -1,3 +1,48 @@
+xserver-xorg-video-fbdev (1:0.4.4-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Julien Cristau <jcristau@debian.org>  Mon, 23 Sep 2013 20:23:23 +0200
+
+xserver-xorg-video-fbdev (1:0.4.3-2) unstable; urgency=low
+
+  * Make sure not to enable XV support in the udeb: XV comes from
+    xorg-server.h and tells us whether the regular server was built with
+    XV support. USE_XV is used to determine whether a given flavour of
+    the driver should be built with XV support (Closes: #720313). Thanks,
+    Steven Chamberlain!
+
+ -- Cyril Brulebois <kibi@debian.org>  Tue, 20 Aug 2013 15:19:49 +0200
+
+xserver-xorg-video-fbdev (1:0.4.3-1) unstable; urgency=low
+
+  [ Maarten Lankhorst ]
+  * New upstream release 0.4.3
+  * Remove 01_fbdev_man.diff
+    - No longer applies/valid
+  * Refresh 02-support-building-without-xv.patch
+  * Bump Standards-Version to 3.9.3 (no changes needed).
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 16 Aug 2013 11:35:04 +0200
+
+xserver-xorg-video-fbdev (1:0.4.2-7) experimental; urgency=low
+
+  * Build against Xserver 1.12 RC1.
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 01 Jan 2012 06:06:00 +0100
+
+xserver-xorg-video-fbdev (1:0.4.2-6) experimental; urgency=low
+
+  * Rebuild against Xserver 1.10 rc3.
+
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 25 Feb 2011 15:53:24 +0100
+
+xserver-xorg-video-fbdev (1:0.4.2-5) experimental; urgency=low
+
+  * Rebuild against Xserver 1.10 rc2.
+
+ -- Cyril Brulebois <kibi@debian.org>  Sun, 20 Feb 2011 07:40:28 +0100
+
 xserver-xorg-video-fbdev (1:0.4.2-4) unstable; urgency=low
 
   * Switch to dh:

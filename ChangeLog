@@ -1,3 +1,212 @@
+commit 679ed9a4e6b54227df191c580e3ef641e075db19
+Author: Julien Cristau <jcristau@debian.org>
+Date:   Mon Sep 23 20:02:47 2013 +0200
+
+    Bump to 0.4.4
+
+commit ac293412a01d87f87eb61f4adb9db7486a75d3fc
+Author: Adam Jackson <ajax@redhat.com>
+Date:   Tue Sep 25 08:54:37 2012 -0400
+
+    Remove mibstore.h
+    
+    Signed-off-by: Adam Jackson <ajax@redhat.com>
+
+commit 2edaad4ab2c75e6863caa529d27cd141f579914a
+Author: Dave Airlie <airlied@redhat.com>
+Date:   Mon Jul 2 12:47:08 2012 +0100
+
+    fbdev: bump to 0.4.3
+    
+    Signed-off-by: Dave Airlie <airlied@redhat.com>
+
+commit 8a65ca2fdcc8657ed3b4a72051c6f85bcecc2c18
+Author: Dave Airlie <airlied@redhat.com>
+Date:   Tue Jun 5 11:29:31 2012 +0100
+
+    fbdev: port to new server API.
+    
+    Signed-off-by: Dave Airlie <airlied@redhat.com>
+
+commit 91e8b295f87fba81369b19969900f0981e8ba9cd
+Author: Dave Airlie <airlied@redhat.com>
+Date:   Tue Jun 5 11:21:08 2012 +0100
+
+    fbdev: convert to new screen conversion APIs.
+    
+    Generated using util/modular/x-driver-screen-scrn-conv.sh
+    
+    Signed-off-by: Dave Airlie <airlied@redhat.com>
+
+commit 6e29cf8c2927f81e1e5890a46bf03182079cc062
+Author: Dave Airlie <airlied@redhat.com>
+Date:   Tue Jun 5 11:20:49 2012 +0100
+
+    fbdev: add compat-api + makefile
+
+commit a87213930e399c0d5a8183f6cc7e98ed6d092638
+Author: Paulo Zanoni <pzanoni@mandriva.com>
+Date:   Thu Nov 4 17:02:01 2010 -0200
+
+    Add MOD_CLASS_VIDEODRV to FBDevVersRec
+    
+    fbdev seems to be the only video driver without MOD_CLASS_VIDEODRV
+    
+    Signed-off-by: Paulo Zanoni <pzanoni@mandriva.com>
+    Reviewed-by: Jesse Adkins <jesserayadkins@gmail.com>
+    Signed-off-by: Julien Cristau <jcristau@debian.org>
+
+commit be003f2568366ff9fc2ff70d6a69df64a2a25cca
+Author: Cyril Brulebois <kibi@debian.org>
+Date:   Mon Nov 8 14:10:44 2010 +0100
+
+    Perform XV initialization only if the server supports it.
+    
+    Use XV from server's xorg-server.h to determine whether to perform XV
+    initialization.
+    
+    Signed-off-by: Cyril Brulebois <kibi@debian.org>
+    Reviewed-by: Julien Cristau <jcristau@debian.org>
+    Signed-off-by: Julien Cristau <jcristau@debian.org>
+
+commit 20909cd806af488cf529c74417afbc8a12438f4a
+Author: Cyril Brulebois <kibi@debian.org>
+Date:   Mon Nov 8 13:23:35 2010 +0100
+
+    Avoid unused variables when XSERVER_LIBPCIACCESS is defined.
+    
+    Signed-off-by: Cyril Brulebois <kibi@debian.org>
+    Reviewed-by: Julien Cristau <jcristau@debian.org>
+    Signed-off-by: Julien Cristau <jcristau@debian.org>
+
+commit 90524a26d3458e3d1cbb4e1ecbc4db71714b8929
+Author: Cyril Brulebois <kibi@debian.org>
+Date:   Mon Nov 8 13:35:29 2010 +0100
+
+    man: Stop mentioning server's -scanpci option.
+    
+    It got removed in server's 9727db88d57089be6483104de435626cdbad883a
+    (long time ago).
+    
+    Signed-off-by: Cyril Brulebois <kibi@debian.org>
+    Reviewed-by: Julien Cristau <jcristau@debian.org>
+    Reviewed-by: Alan Coopersmith <alan.coopersmith@oracle.com>
+    Signed-off-by: Julien Cristau <jcristau@debian.org>
+
+commit 0d45d8f3ad20073595a675f80dd8a4bfe68babfd
+Author: Cyril Brulebois <kibi@debian.org>
+Date:   Sun Nov 7 15:36:46 2010 +0100
+
+    Convert x{re,c,}alloc and xfree.
+    
+    Signed-off-by: Cyril Brulebois <kibi@debian.org>
+    Reviewed-by: Julien Cristau <jcristau@debian.org>
+    Signed-off-by: Julien Cristau <jcristau@debian.org>
+
+commit 049cdddd14789e00d7db59c44494f90396796992
+Author: Jesse Adkins <jesserayadkins@gmail.com>
+Date:   Tue Sep 28 13:29:51 2010 -0700
+
+    Purge cvs tags.
+    
+    Signed-off-by: Jesse Adkins <jesserayadkins@gmail.com>
+    Signed-off-by: Alan Coopersmith <alan.coopersmith@oracle.com>
+
+commit d3a2fe1b761533909646cae9c35c07f237a9f5e3
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Wed Jul 21 16:49:04 2010 -0400
+
+    config: add comments for main statements
+
+commit f7e68d16dc80fc63ca7f7661378bd6074b8eefa6
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Wed Jul 21 16:07:00 2010 -0400
+
+    config: replace deprecated use of AC_OUTPUT with AC_CONFIG_FILES
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit 0ddf357522eff86288e44d19effe380affbc88a4
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Wed Jul 21 14:37:41 2010 -0400
+
+    config: replace deprecated AC_HELP_STRING with AS_HELP_STRING
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit 55e0de6cb19faa7d870971f035b41d687af27f0d
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Wed Jul 21 14:05:22 2010 -0400
+
+    config: replace deprecated AM_CONFIG_HEADER with AC_CONFIG_HEADERS
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit a05560b1d37f47a73e1545ef1ba4221d84db1e3c
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Wed Jul 21 09:27:42 2010 -0400
+
+    config: complete AC_INIT m4 quoting
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit 8f7d8a7ba33ca16dea37c26268ceb0a93d407a16
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Tue Jul 20 21:44:57 2010 -0400
+
+    config: remove unrequired AC_SUBST([XORG_CFLAGS])
+    
+    This macro is called by PKG_CHECK_MODULES
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit 9b3ef42fdd29b46b1edc207052f1fa9c925a7276
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Tue Jul 20 20:24:42 2010 -0400
+
+    config: remove unrequired AC_HEADER_STDC
+    
+    Autoconf says:
+    "This macro is obsolescent, as current systems have conforming
+    header files. New programs need not use this macro".
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit b768d66b87287ac46c2850f816219d75e6b1d21e
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Tue Jul 20 19:41:30 2010 -0400
+
+    config: remove AC_PROG_CC as it overrides AC_PROG_C_C99
+    
+    XORG_STRICT_OPTION from XORG_DEFAULT_OPTIONS calls
+    AC_PROG_C_C99. This sets gcc with -std=gnu99.
+    If AC_PROG_CC macro is called afterwards, it resets CC to gcc.
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit fa588a1ddcc095166d8e305d6a1c79970d1e70ec
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Tue Jul 20 18:45:19 2010 -0400
+
+    config: update AC_PREREQ statement to 2.60
+    
+    Unrelated to the previous patches, the new value simply reflects
+    the reality that the minimum level for autoconf to configure
+    all x.org modules is 2.60 dated June 2006.
+    
+    ftp://ftp.gnu.org/gnu/autoconf/autoconf-2.60.tar.gz
+    
+    Signed-off-by: Gaetan Nadon <memsize@videotron.ca>
+
+commit 6977b3490a626247bdc979e8afc6e5a8b9e19896
+Author: Gaetan Nadon <memsize@videotron.ca>
+Date:   Tue Jul 20 16:15:29 2010 -0400
+
+    config: upgrade to util-macros 1.8 for additional man page support
+    
+    Use MAN_SUBST now supplied in XORG_MANPAGE_SECTIONS
+    The value of MAN_SUBST is the same for all X.Org packages.
+
 commit 7ec9d466e55e6366bf35639610b14a149f6e7b45
 Author: Julien Cristau <jcristau@debian.org>
 Date:   Sat Apr 3 18:05:21 2010 +0200
